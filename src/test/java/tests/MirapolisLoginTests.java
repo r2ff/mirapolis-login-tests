@@ -1,19 +1,12 @@
 package tests;
 
-
-import com.codeborne.selenide.conditions.Text;
-import helpers.DriverUtils;
-import io.qameta.allure.Feature;
-import io.qameta.allure.Owner;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static io.qameta.allure.Allure.step;
-
 
 public class MirapolisLoginTests extends TestBase {
     @Test
@@ -72,5 +65,4 @@ public class MirapolisLoginTests extends TestBase {
             $(".info-title").shouldHave(text("Восстановление пароля"));
         });
     }
-
 }
