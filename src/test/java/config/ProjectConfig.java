@@ -13,14 +13,6 @@ public interface ProjectConfig extends Config {
     @Key("browser")
     String browser();
 
-    @DefaultValue("91.0")
-    @Key("browserVersion")
-    String browserVersion();
-
-    @DefaultValue("1920x1080")
-    @Key("browserSize")
-    String browserSize();
-
     @Key("remoteDriverUrl")
     String remoteDriverUrl();
 }

@@ -10,16 +10,12 @@ public class DriverSettings {
 
     public static void configure() {
         Configuration.browser = Project.config.browser();
-        Configuration.browserVersion = Project.config.browserVersion();
-        Configuration.browserSize = Project.config.browserSize();
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--lang=en-en");
 
         if (Project.isRemoteWebDriver()) {
-//            capabilities.setCapability("enableVNC", true);
-//            capabilities.setCapability("enableVideo", true);
             Configuration.remote = Project.config.remoteDriverUrl();
         }
 
